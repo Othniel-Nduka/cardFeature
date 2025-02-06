@@ -22,8 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Othniel-Nduka/cardFeature)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: (https://card-featurefm.vercel.app/)
 
 ### Built with
 
