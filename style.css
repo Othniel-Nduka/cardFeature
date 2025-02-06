@@ -1,0 +1,140 @@
+/* Popping Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins End */
+
+
+/* General Styles */
+
+    :root{
+        --Red: hsl(0, 78%, 62%);
+        --Cyan: hsl(180, 62%, 55%);
+        --Orange: hsl(34, 97%, 64%);
+        --Blue: hsl(212, 86%, 64%);
+        --Very-Dark-Blue: hsl(234, 12%, 34%);
+        --Grayish-Blue: hsl(229, 6%, 66%);
+        --Very-Light-Gray: hsl(0, 0%, 98%);
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: none; */
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body{
+        width: 100%;
+        background: var(--Very-Light-Gray);
+    }
+
+/* End of General Styles */
+
+/* PC size */
+
+    .container{
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .container h1{
+        color: #4c4e61;
+        margin-bottom: 10px;
+    }
+
+    .text{
+        width: 30rem;
+        color: var(--Grayish-Blue);
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .card-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .card{
+        width: 350px;
+        height: 15rem;
+        padding: 25px;
+        background: var(--Very-Light-Gray);
+        box-shadow: 0 13px 15px var(--Very-Dark-Blue);
+        margin-bottom: 20px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .card-head{
+        font-weight: 600;
+        color: var(--Very-Dark-Blue);
+    }
+
+    .card-text{
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--Grayish-Blue);
+    }
+
+    .card img{
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+    }
+    
+    .super{
+        border-top: 5px solid var(--Cyan);
+    }
+    .team{border-top: 5px solid var(--Red);}
+    .karma{border-top: 5px solid var(--Orange);}
+    .calc{border-top: 5px solid var(--Blue)}
+
+/* End PC size */
+
+/* Mobile Screen Size */
+
+@media (max-width: 375px) {
+    body{
+        font-size: 80%;
+    }
+
+    h1{
+        font-size: 27px;
+    }
+
+    .container .text{
+        width: 20rem;
+    }
+    .container{
+        width: 90%;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .card-head{
+        font-size: 20px;
+    }
+}
+
+/* End Of Mobile Screen Size */
